@@ -2,18 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    /* Set the entire page background (except footer) to your image */
     background: url('images/home/backdrop_no_title.png') no-repeat center center fixed;
     background-size: cover;
-}
-
-/* To ensure footer doesn't overlap background, 
-   we can give it a solid background color. */
-.footer {
-    background: #eee;
-    text-align: center;
-    font-size: 0.9em;
-    padding: 20px;
 }
 
 /* Hero Section */
@@ -22,14 +12,20 @@ body {
     padding: 60px 20px;
 }
 
-.hero-title {
-    font-size: 3em;
-    background: rgba(255,255,255,0.8);
-    display: inline-block;
-    padding: 20px 40px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+.title-image {
+    max-width: 50%; /* Make the title smaller */
+    height: auto;
+}
+
+.profile-pic {
+    display: block;
+    margin: 10px auto 0 auto; /* Ensure it appears just below the title and centered */
+    width: 150px;
+    height: 150px;
+    max-width: 30%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
 }
 
 /* Links Section */
@@ -44,14 +40,14 @@ body {
 .art-link {
     display: inline-block;
     width: 150px;
-    height: 150px;
+    height: 50px;
     text-decoration: none;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.8);
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
     vertical-align: middle;
-    line-height: 150px;
+    line-height: 50px;
     font-size: 1.2em;
     color: #333;
     transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -60,4 +56,12 @@ body {
 .art-link:hover {
     background: rgba(255,255,255,1);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+    background: #eee;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
 }
